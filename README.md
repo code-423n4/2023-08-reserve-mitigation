@@ -45,20 +45,25 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/reserve-protocol/protocol/pull/888 | H-02 | Adds governance function to manually push the era forward |
 | https://github.com/reserve-protocol/protocol/pull/857 | H-01 | Fix redeemCustom |
-| https://github.com/reserve-protocol/protocol/pull/857 | M-11 | Change gas reservation policy in AssetRegistry | 
-| https://github.com/reserve-protocol/protocol/pull/857 | M-08 | payoutRewards before freeze and update payoutLastPaid before unfreeze |
-| https://github.com/reserve-protocol/protocol/pull/885 | Med #29 | Update payout variables if melt fails during setRatio |
-| https://github.com/reserve-protocol/protocol/pull/878 | M-03 | Distribute revenue in setDistribution |
-| https://github.com/reserve-protocol/protocol/pull/877 | Med #46 | Document preference for dutch auctions |
-| https://github.com/reserve-protocol/protocol/pull/877 | Med #31 | Claim rewards when unregistering an Asset |
-| https://github.com/reserve-protocol/protocol/pull/877 | Med #17 | Require collateral status remain constant on registration |
-| https://github.com/reserve-protocol/protocol/pull/877 | Med #54 | Set trade status to CLOSED on contract deployment |
+| https://github.com/reserve-protocol/protocol/pull/888 | H-02 | Adds governance function to manually push the era forward |
 | https://github.com/reserve-protocol/protocol/pull/876 | M-01 | Allow settle trade when paused or frozen |
 | https://github.com/reserve-protocol/protocol/pull/873 https://github.com/reserve-protocol/protocol/pull/869 | M-02 | Disable dutch auctions on a per-collateral basis, use 4-step dutch trade curve|
-| https://github.com/reserve-protocol/protocol/pull/872 | Med #30 | Call useAvailable when setting throttles |
+| https://github.com/reserve-protocol/protocol/pull/878 | M-03 | Distribute revenue in setDistribution |
+| https://github.com/reserve-protocol/protocol/pull/885 | M-04 | Update payout variables if melt fails during setRatio |
+| https://github.com/reserve-protocol/protocol-private/pull/15 | M-06 | Use lotPrice() |
+| https://github.com/reserve-protocol/protocol-private/pull/7 | M-07 | Refresh before selling rewards, refactor revenue & distro |
+| https://github.com/reserve-protocol/protocol/pull/857 | M-08 | payoutRewards before freeze and update payoutLastPaid before unfreeze |
+| https://github.com/reserve-protocol/protocol-private/pull/3 | M-09 | Payout rewards during cancelUnstake |
+| https://github.com/reserve-protocol/protocol/pull/886 | M-10 | Add oracle deprecation check |
+| https://github.com/reserve-protocol/protocol/pull/857 | M-11 | Change gas reservation policy in AssetRegistry | 
+| https://github.com/reserve-protocol/protocol/pull/877 | QA | Document preference for dutch auctions |
+| https://github.com/reserve-protocol/protocol/pull/877 | QA | Claim rewards when unregistering an Asset |
+| https://github.com/reserve-protocol/protocol/pull/877 | QA | Require collateral status remain constant on registration |
+| https://github.com/reserve-protocol/protocol/pull/872 | QA | Call useAvailable when setting throttles |
+| https://github.com/reserve-protocol/protocol/pull/877 | QA | Set trade status to CLOSED on contract deployment |
 
 ## Out of Scope
 
 https://github.com/code-423n4/2023-06-reserve-findings/issues/6
+https://github.com/code-423n4/2023-06-reserve-findings/issues/16
