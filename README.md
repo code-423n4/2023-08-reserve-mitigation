@@ -45,16 +45,19 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/reserve-protocol/protocol/pull/888 | H-02 | Adds governance function to manually push the era forward |
-| https://github.com/reserve-protocol/protocol/pull/885 | M-29 | Update payout variables if melt fails during setRatio |
-| https://github.com/reserve-protocol/protocol/pull/878 | M-34 | Distribute revenue in setDistribution |
-| https://github.com/reserve-protocol/protocol/pull/877 | M-46 | Document preference for dutch auctions |
-| https://github.com/reserve-protocol/protocol/pull/877 | M-31 | Claim rewards when unregistering an Asset |
-| https://github.com/reserve-protocol/protocol/pull/877 | M-17 | Require collateral status remain constant on registration |
-| https://github.com/reserve-protocol/protocol/pull/877 | M-54 | Set trade status to CLOSED on contract deployment |
-| https://github.com/reserve-protocol/protocol/pull/876 | M-48 | Allow settle trade when paused or frozen |
+| https://github.com/reserve-protocol/protocol/pull/888 | High #02 | Adds governance function to manually push the era forward |
+| https://github.com/reserve-protocol/protocol/pull/857 | High #4 | Fix redeemCustom |
+| https://github.com/reserve-protocol/protocol/pull/857 | Med #7 | Change gas reservation policy in AssetRegistry | 
+| https://github.com/reserve-protocol/protocol/pull/857 | Med # 11 | payoutRewards before freeze and update payoutLastPaid before unfreeze |
+| https://github.com/reserve-protocol/protocol/pull/885 | Med #29 | Update payout variables if melt fails during setRatio |
+| https://github.com/reserve-protocol/protocol/pull/878 | Med #34 | Distribute revenue in setDistribution |
+| https://github.com/reserve-protocol/protocol/pull/877 | Med #46 | Document preference for dutch auctions |
+| https://github.com/reserve-protocol/protocol/pull/877 | Med #31 | Claim rewards when unregistering an Asset |
+| https://github.com/reserve-protocol/protocol/pull/877 | Med #17 | Require collateral status remain constant on registration |
+| https://github.com/reserve-protocol/protocol/pull/877 | Med #54 | Set trade status to CLOSED on contract deployment |
+| https://github.com/reserve-protocol/protocol/pull/876 | Med #48 | Allow settle trade when paused or frozen |
 | https://github.com/reserve-protocol/protocol/pull/873 https://github.com/reserve-protocol/protocol/pull/869 | M-47 | Disable dutch auctions on a per-collateral basis, use 4-step dutch trade curve|
-| https://github.com/reserve-protocol/protocol/pull/872 | M-30 | Call useAvailable when setting throttles |
+| https://github.com/reserve-protocol/protocol/pull/872 | Med #30 | Call useAvailable when setting throttles |
 
 ## Out of Scope
 
