@@ -37,17 +37,25 @@ Please provide context about the mitigations that were applied if applicable and
 ## Mitigations to be reviewed
 
 ### Branch
-[ ⭐️ SPONSORS ADD A LINK TO THE BRANCH IN YOUR REPO CONTAINING ALL PRS ]
+https://github.com/reserve-protocol/protocol/pull/882 (commit hash 08212ffbd227368af2adabbbdc2e5407541d7160)
 
 ### Individual PRs
-[ ⭐️ SPONSORS ADD ALL RELEVANT PRs TO THE TABLE BELOW:]
 
 Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/your-repo/sample-contracts/pull/XXX | H-01 | This mitigation does XYZ | 
+| https://github.com/reserve-protocol/protocol/pull/888 | H-02 | Adds governance function to manually push the era forward |
+| https://github.com/reserve-protocol/protocol/pull/885 | M-29 | Update payout variables if melt fails during setRatio |
+| https://github.com/reserve-protocol/protocol/pull/878 | M-34 | Distribute revenue in setDistribution |
+| https://github.com/reserve-protocol/protocol/pull/877 | M-46 | Document preference for dutch auctions |
+| https://github.com/reserve-protocol/protocol/pull/877 | M-31 | Claim rewards when unregistering an Asset |
+| https://github.com/reserve-protocol/protocol/pull/877 | M-17 | Require collateral status remain constant on registration |
+| https://github.com/reserve-protocol/protocol/pull/877 | M-54 | Set trade status to CLOSED on contract deployment |
+| https://github.com/reserve-protocol/protocol/pull/876 | M-48 | Allow settle trade when paused or frozen |
+| https://github.com/reserve-protocol/protocol/pull/873 https://github.com/reserve-protocol/protocol/pull/869 | M-47 | Disable dutch auctions on a per-collateral basis, use 4-step dutch trade curve|
+| https://github.com/reserve-protocol/protocol/pull/872 | M-30 | Call useAvailable when setting throttles |
 
 ## Out of Scope
 
-Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
+https://github.com/code-423n4/2023-06-reserve-findings/issues/6
