@@ -1,13 +1,14 @@
 # Reserve - Mitigation Review details
-- Total Prize Pool: $17,600 USDC 
+
+- Total Prize Pool: $17,600 USDC
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/2023-08-reserve-mitigation/submit)
-- Starts August 15, 2023 20:00 UTC 
-- Ends August 22, 2023 20:00 UTC 
+- Starts August 15, 2023 20:00 UTC
+- Ends August 22, 2023 20:00 UTC
 
-## Important note 
+## Important note
 
-Each warden must submit a mitigation review for *every High and Medium finding* from the parent audit that is listed as in-scope for the mitigation review. **Incomplete mitigation reviews will not be eligible for awards.**
+Each warden must submit a mitigation review for _every High and Medium finding_ from the parent audit that is listed as in-scope for the mitigation review. **Incomplete mitigation reviews will not be eligible for awards.**
 
 ## Findings being mitigated
 
@@ -28,8 +29,6 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-11: Attacker can disable basket during un-registration, which can cause an unnecessary trade in some cases](https://github.com/code-423n4/2023-06-reserve-findings/issues/7)
 - [M-12: Custom redemption can be used to get more than RToken value, when an upwards depeg occurs](https://github.com/code-423n4/2023-06-reserve-findings/issues/6)
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Overview of changes
 
 Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
@@ -37,31 +36,32 @@ Please provide context about the mitigations that were applied if applicable and
 ## Mitigations to be reviewed
 
 ### Branch
-https://github.com/reserve-protocol/protocol/pull/882 (commit hash 08212ffbd227368af2adabbbdc2e5407541d7160)
+
+https://github.com/reserve-protocol/protocol/pull/882 (commit hash 99d9db72e04db29f8e80e50a78b16a0b475d79f3)
 
 ### Individual PRs
 
-Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
+Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo.
 
-| URL | Mitigation of | Purpose | 
-| ----------- | ------------- | ----------- |
-| https://github.com/reserve-protocol/protocol/pull/857 | H-01 | Fix redeemCustom |
-| https://github.com/reserve-protocol/protocol/pull/888 | H-02 | Adds governance function to manually push the era forward |
-| https://github.com/reserve-protocol/protocol/pull/876 | M-01 | Allow settle trade when paused or frozen |
-| https://github.com/reserve-protocol/protocol/pull/873 https://github.com/reserve-protocol/protocol/pull/869 | M-02 | Disable dutch auctions on a per-collateral basis, use 4-step dutch trade curve|
-| https://github.com/reserve-protocol/protocol/pull/878 | M-03 | Distribute revenue in setDistribution |
-| https://github.com/reserve-protocol/protocol/pull/885 | M-04 | Update payout variables if melt fails during setRatio |
-| https://github.com/reserve-protocol/protocol-private/pull/15 | M-06 | Use lotPrice() |
-| https://github.com/reserve-protocol/protocol-private/pull/7 | M-07 | Refresh before selling rewards, refactor revenue & distro |
-| https://github.com/reserve-protocol/protocol/pull/857 | M-08 | payoutRewards before freeze and update payoutLastPaid before unfreeze |
-| https://github.com/reserve-protocol/protocol-private/pull/3 | M-09 | Payout rewards during cancelUnstake |
-| https://github.com/reserve-protocol/protocol/pull/886 | M-10 | Add oracle deprecation check |
-| https://github.com/reserve-protocol/protocol/pull/857 | M-11 | Change gas reservation policy in AssetRegistry | 
-| https://github.com/reserve-protocol/protocol/pull/877 | QA | Document preference for dutch auctions |
-| https://github.com/reserve-protocol/protocol/pull/877 | QA | Claim rewards when unregistering an Asset |
-| https://github.com/reserve-protocol/protocol/pull/877 | QA | Require collateral status remain constant on registration |
-| https://github.com/reserve-protocol/protocol/pull/872 | QA | Call useAvailable when setting throttles |
-| https://github.com/reserve-protocol/protocol/pull/877 | QA | Set trade status to CLOSED on contract deployment |
+| URL                                                                                                         | Mitigation of | Purpose                                                                        |
+| ----------------------------------------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------ |
+| https://github.com/reserve-protocol/protocol/pull/857                                                       | H-01          | Fix redeemCustom                                                               |
+| https://github.com/reserve-protocol/protocol/pull/888                                                       | H-02          | Adds governance function to manually push the era forward                      |
+| https://github.com/reserve-protocol/protocol/pull/876                                                       | M-01          | Allow settle trade when paused or frozen                                       |
+| https://github.com/reserve-protocol/protocol/pull/873 https://github.com/reserve-protocol/protocol/pull/869 | M-02          | Disable dutch auctions on a per-collateral basis, use 4-step dutch trade curve |
+| https://github.com/reserve-protocol/protocol/pull/878                                                       | M-03          | Distribute revenue in setDistribution                                          |
+| https://github.com/reserve-protocol/protocol/pull/885                                                       | M-04          | Update payout variables if melt fails during setRatio                          |
+| https://github.com/reserve-protocol/protocol-private/pull/15                                                | M-06          | Use lotPrice()                                                                 |
+| https://github.com/reserve-protocol/protocol-private/pull/7                                                 | M-07          | Refresh before selling rewards, refactor revenue & distro                      |
+| https://github.com/reserve-protocol/protocol/pull/857                                                       | M-08          | payoutRewards before freeze and update payoutLastPaid before unfreeze          |
+| https://github.com/reserve-protocol/protocol-private/pull/3                                                 | M-09          | Payout rewards during cancelUnstake                                            |
+| https://github.com/reserve-protocol/protocol/pull/886                                                       | M-10          | Add oracle deprecation check                                                   |
+| https://github.com/reserve-protocol/protocol/pull/857                                                       | M-11          | Change gas reservation policy in AssetRegistry                                 |
+| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Document preference for dutch auctions                                         |
+| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Claim rewards when unregistering an Asset                                      |
+| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Require collateral status remain constant on registration                      |
+| https://github.com/reserve-protocol/protocol/pull/872                                                       | QA            | Call useAvailable when setting throttles                                       |
+| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Set trade status to CLOSED on contract deployment                              |
 
 ## Out of Scope
 
