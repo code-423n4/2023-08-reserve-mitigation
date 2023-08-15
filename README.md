@@ -14,7 +14,7 @@ Each warden must submit a mitigation review for:
 - one report for the QA fixes.
 
 For the QA mitigation report:
-- Submit any new High or Medium issues introduced by the QA and GAS fixes as a newly-introduced High and Medium risk issue.
+- Submit any new High or Medium issues introduced by the QA fixes as a newly-introduced High and Medium risk issue.
 
 **Incomplete mitigation reviews will not be eligible for awards.**
 
