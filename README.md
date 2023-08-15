@@ -35,10 +35,6 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-10: An oracle deprecation might lead the protocol to sell assets for a low price](https://github.com/code-423n4/2023-06-reserve-findings/issues/8)
 - [M-11: Attacker can disable basket during un-registration, which can cause an unnecessary trade in some cases](https://github.com/code-423n4/2023-06-reserve-findings/issues/7)
 
-## Overview of changes
-
-Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
-
 ## Mitigations to be reviewed
 
 ### Branch
