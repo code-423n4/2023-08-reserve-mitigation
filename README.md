@@ -8,13 +8,7 @@
 
 ## Important note
 
-Each warden must submit a mitigation review for:
-
-- Every High and Medium finding listed as in-scope below, and
-- one report for the QA fixes.
-
-For the QA mitigation report:
-- Submit any new High or Medium issues introduced by the QA fixes as a newly-introduced High and Medium risk issue.
+Each warden must submit a mitigation review for *every High and Medium finding* from the parent audit that is listed as in-scope for the mitigation review. 
 
 **Incomplete mitigation reviews will not be eligible for awards.**
 
@@ -59,11 +53,6 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | https://github.com/reserve-protocol/protocol-private/pull/3                                                 | M-09          | Payout rewards during cancelUnstake                                            |
 | https://github.com/reserve-protocol/protocol/pull/886                                                       | M-10          | Add oracle deprecation check                                                   |
 | https://github.com/reserve-protocol/protocol/pull/857                                                       | M-11          | Change gas reservation policy in AssetRegistry                                 |
-| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Document preference for dutch auctions                                         |
-| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Claim rewards when unregistering an Asset                                      |
-| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Require collateral status remain constant on registration                      |
-| https://github.com/reserve-protocol/protocol/pull/872                                                       | QA            | Call useAvailable when setting throttles                                       |
-| https://github.com/reserve-protocol/protocol/pull/877                                                       | QA            | Set trade status to CLOSED on contract deployment                              |
 
 ## Out of Scope
 
